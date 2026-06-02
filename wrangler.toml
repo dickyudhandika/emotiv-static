@@ -1,0 +1,9 @@
+name = "emotiv-static"
+main = "worker.js"
+compatibility_date = "2026-06-02"
+workers_dev = true
+
+[assets]
+directory = "./"
+not_found_404 = true
+html_handling = "auto-trailing-slash"
