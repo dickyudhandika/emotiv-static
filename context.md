@@ -2,21 +2,20 @@
 
 ## Stack
 - **Type**: Static HTML (extracted from Framer)
-- **Hosting target**: Cloudflare Pages via GitHub
-- **Build step**: None (plain static)
+- **Hosting**: Cloudflare Workers (`workers_dev: true`)
+- **URL**: https://emotiv-static.dicky-996.workers.dev
+- **Build step**: None (plain static, `wrangler deploy`)
 
 ## Structure
-- `index.html` — single-page site (hero, features, testimonials, footer)
-- `images/` — downloaded image assets
-- `videos/` — downloaded video assets
-- `js/` — minimal JS (mostly stripped; Framer hydration removed)
+- `index.html` — single-page site (937 KB after optimization)
+- `styles.css` — externalized CSS (430 KB, extracted from inline <style>)
+- `images/` — all WebP format, no JPEG/PNG remaining
+- `videos/` — hero_section.mp4 (5.5 MB) + real_world_neuroscience.mp4 (13.5 MB)
 
 ## Recent Changes
-- Extracted emotiv.com homepage into self-contained static HTML
-- Stripped all Framer JavaScript animations and hydration scripts
-- All content now renders immediately without JS
-- Converted remote image/video URLs to local relative paths
+- 2026-06-02: Perf overhaul — externalized CSS, decoded 32 base64 images to files, fixed heading hierarchy, added aria-labels, video captions, LCP preload, converted all images to WebP. HTML dropped from 2,028 KB → 937 KB. Lighthouse mobile: Perf 87→TBD, A11y 91→TBD.
 
 ## Notes
-- Ready for Cloudflare Pages deployment
-- No build command needed; output directory is root `/`
+- Deployed via `wrangler deploy` from root
+- No JS framework — pure static HTML + CSS
+- Videos have poster + preload="none" + captions track
