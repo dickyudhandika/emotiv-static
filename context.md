@@ -14,6 +14,7 @@
 
 ## Recent Changes
 - 2026-06-02: Perf overhaul — externalized CSS, decoded 32 base64 images to files, fixed heading hierarchy, added aria-labels, video captions, LCP preload, converted all images to WebP. HTML dropped from 2,028 KB → 937 KB. Lighthouse mobile: Perf 87→TBD, A11y 91→TBD.
+- 2026-06-02: Cloudflare Workers setup — wrangler login + deploy, added wrangler.toml (workers_dev enabled), .wranglerignore. index.html restructured for CF Workers serving.
 
 ## Notes
 - Deployed via `wrangler deploy` from root

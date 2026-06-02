@@ -1,0 +1,11 @@
+node_modules/
+screenshots/
+*.py
+audit.py
+lighthouse.json
+package.json
+package-lock.json
+tailwind.config.js
+index-framer-backup.html
+index-plain.html
+.git/

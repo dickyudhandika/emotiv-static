@@ -1,0 +1,24 @@
+{
+  "name": "emotiv-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dickyudhandika/emotiv-static.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dickyudhandika/emotiv-static/issues"
+  },
+  "homepage": "https://github.com/dickyudhandika/emotiv-static#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}

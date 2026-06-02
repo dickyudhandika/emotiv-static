@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Emotiv | Advanced Brain Data & Wireless EEG Solutions</title>
+<meta name="description" content="Explore Emotiv's advanced wireless EEG hardware and software for precise brain data measurement, research innovation, and deeper neuroscience insights."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: '#09153b',
+        primary: '#3363ff',
+        light: '#eceef6',
+        accent: '#d82d5f',
+      },
+      fontFamily: {
+        sans: ['Geist', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+<style>
+  body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  .nav-blur { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+  .card-hover { transition: all 0.3s ease; }
+  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(9,21,59,0.12); }
+  .product-slide { transition: all 0.3s ease; }
+  .product-slide:hover { transform: translateY(-6px); }
+  @media (max-width: 390px) { .hero-heading { font-size: 2.25rem !important; line-height: 1.1 !important; } }
+</style>
+</head>
+<body class="bg-white text-[#1f1f1f] font-sans antialiased">
+
+<!-- Navigation -->
+<header class="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-3">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between bg-white/80 nav-blur rounded-2xl px-4 sm:px-8 py-3 shadow-sm border border-white/20" aria-label="Main navigation">
+    <a href="./" class="flex items-center gap-2 flex-shrink-0" aria-label="Emotiv Home">
+      <svg width="82" height="26" viewBox="0 0 82 26" fill="#09153b"><path d="M35.122 0L40.252 3.546L29.269 10.693C29.826 11.123 30.461 11.485 31.018 11.91L42.07 4.803L46.877 8.072L35.953 15.328C36.442 15.823 37.16 16.096 37.761 16.491L48.959 9.291V1.426H57.152V17.101H64.416V24.514H49.007V17.087L35.24 26L21.145 16.422C19.767 20.845 16.504 24.168 11.09 24.564C7.67 24.811 3.884 24.381 0 24.564V1.471C4.856 1.798 10.191 0.813 14.041 2.026C17.447 3.096 19.904 5.848 20.979 9.281L35.127 0.089ZM7.763 8.805V17.111C9.717 17.121 11.198 17.235 12.356 16.334C14.066 14.996 14.417 11.678 12.903 9.911C11.891 8.732 10.186 8.484 7.822 8.638C7.757 8.647 7.763 8.727 7.773 8.806H7.763ZM66.596 1.337H74.789V17.066H82V24.43H66.537V1.501C66.533 1.421 66.527 1.342 66.585 1.332Z"/></svg>
+    </a>
+    <div class="hidden lg:flex items-center gap-6">
+      <a href="./epoc-x" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">Products</a>
+      <a href="./emotiv-bci" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">EmotivBCI</a>
+      <a href="./emotivpro" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">EmotivPRO</a>
+      <a href="./studio" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">Emotiv Studio</a>
+      <a href="./platform" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">Platform & Partners</a>
+      <a href="./developer" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">Developer</a>
+      <a href="./about" class="text-sm font-medium text-navy/80 hover:text-navy transition-colors">About</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://shop.emotiv.com/" class="hidden sm:inline-flex text-sm font-medium text-white bg-navy hover:bg-navy/90 rounded-full px-5 py-2 transition-colors">Shop Now</a>
+      <button class="lg:hidden p-2" aria-label="Open menu">
+        <svg class="w-5 h-5 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center overflow-hidden bg-navy">
+  <div class="absolute inset-0 w-full h-full">
+    <video autoplay loop muted playsinline poster="assets/images/img_0048.png" preload="none" class="w-full h-full object-cover opacity-30">
+      <source src="./videos/hero_section.mp4" type="video/mp4">
+    </video>
+    <div class="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/70 to-navy/30"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-32 md:py-40 w-full">
+    <div class="max-w-3xl">
+      <p class="text-primary font-semibold text-sm sm:text-base tracking-[0.2em] uppercase mb-4">The Leader in Real-World Neuroscience</p>
+      <h1 class="hero-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6">
+        Emotiv technology operates at the forefront of research and innovation
+      </h1>
+      <p class="text-lg sm:text-xl text-white/60 max-w-2xl mb-8 leading-relaxed">
+        enabling human-centered neuroscience across real-world applications.
+      </p>
+      <p class="text-base text-white/40 max-w-xl mb-10">
+        Measure and interpret the human brain anywhere, for anyone.
+        The most validated platform for research, enterprise, and personal neuroscience.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="./epoc-x" class="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full px-8 py-3.5 transition-all shadow-lg shadow-primary/25">Explore Products <span aria-hidden="true">→</span></a>
+        <a href="./academic-research-and-education" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium rounded-full px-8 py-3.5 border border-white/20 transition-all">Research Hub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar / Stats -->
+<section class="bg-light py-16 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+      <div>
+        <p class="text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-none mb-3">20,000+</p>
+        <p class="text-navy/60 text-base md:text-lg font-medium">Scientific Citations</p>
+      </div>
+      <div>
+        <p class="text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-none mb-3">4,000+</p>
+        <p class="text-navy/60 text-base md:text-lg font-medium">Institutions</p>
+      </div>
+      <div>
+        <p class="text-5xl md:text-6xl lg:text-7xl font-bold text-navy leading-none mb-3">Fortune 500</p>
+        <p class="text-navy/60 text-base md:text-lg font-medium">Companies Trust Emotiv</p>
+      </div>
+    </div>
+    <div class="mt-12 max-w-4xl mx-auto text-center px-4">
+      <p class="text-navy/70 text-base md:text-lg leading-relaxed italic border-l-4 border-primary/30 pl-6">
+        "Emotiv devices are the most widely used consumer EEG headsets in global peer-reviewed research across neuroscience, engineering, and BCI applications."
+      </p>
+      <p class="text-navy/50 text-sm mt-4 font-medium">— Sabio et al. (2024) University of Queensland</p>
+    </div>
+    <!-- Logo bar -->
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-8 opacity-50">
+      <img src="assets/images/img_0004.svg" alt="University logo" class="h-6" loading="lazy">
+      <img src="assets/images/img_0005.svg" alt="Partner logo" class="h-6" loading="lazy">
+      <img src="assets/images/img_0010.svg" alt="Partner logo" class="h-6" loading="lazy">
+      <img src="assets/images/img_0011.svg" alt="Partner logo" class="h-6" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- Real World Neuroscience -->
+<section class="py-20 md:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div>
+        <p class="text-sm font-semibold text-primary tracking-widest uppercase mb-4">Real-World Neuroscience</p>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight mb-6">
+          Real world neuroscience is simple.
+        </h2>
+        <p class="text-lg text-navy/60 leading-relaxed mb-6">
+          It's measuring how the brain responds in everyday life. Not in a lab. Not in theory. In reality.
+        </p>
+        <p class="text-navy/50 text-sm">— Tan Le, Co-founder and CEO of Emotiv</p>
+        <a href="./academic-research-and-education" class="inline-flex items-center gap-2 text-primary font-semibold mt-6 hover:gap-3 transition-all">Access Research Hub <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden shadow-xl">
+        <video autoplay loop muted playsinline poster="assets/images/img_0049.png" preload="none" class="w-full rounded-2xl">
+          <source src="./videos/real_world_neuroscience.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Versatile by design / 4 Cards -->
+<section class="py-20 md:py-28 bg-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center mb-16">
+      <p class="text-sm font-semibold text-primary tracking-[0.2em] uppercase mb-4">Solutions</p>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight">
+        Versatile by design.<br>Powerful by application.
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <a href="./academic-research-and-education" class="group bg-white rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-navy to-[#0f2350] flex items-center justify-center p-8">
+          <img src="assets/images/img_0000.png" alt="Academic Research" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">Academic Research & Education</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">Validate your hypothesis with the standard for mobile EEG. Grant-ready data fidelity with real-world validity.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Access Research Hub <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a href="./neuromarketing" class="group bg-white rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center p-8">
+          <img src="assets/images/img_0006.png" alt="Neuromarketing" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">The End of Guessing</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">Don't limit your science to the lab. Our sensors handle motion and chaos so you can study humans in real-world context.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Access Research Hub <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a href="./emotiv-app" class="group bg-white rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-[#1a1a2e] to-[#16213e] flex items-center justify-center p-8">
+          <img src="assets/images/img_0012.png" alt="Personal Neuroscience" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">Master Your Mind</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">Optimize your cognitive performance or experience the magic of mind-controlled gaming.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Start Your Wellness Journey <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a href="./developer" class="group bg-white rounded-2xl overflow-hidden card-hover">
+        <div class="aspect-[4/3] bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] flex items-center justify-center p-8">
+          <img src="assets/images/img_0019.png" alt="Developer" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">Build with Sentience</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">Build, train, and deploy neuro-adaptive apps using Cortex API, Gemini, and Google Cloud Platform.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Start Building <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Select your Pathway -->
+<section class="py-20 md:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center mb-16">
+      <p class="text-sm font-semibold text-primary tracking-[0.2em] uppercase mb-4">Pathways</p>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight">Select your Pathway</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm card-hover">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0004.svg" alt="" class="w-6 h-6" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Enterprise & Scale</h3>
+        <p class="text-navy/60 text-sm leading-relaxed mb-6">Conduct user research on secure, compliant infrastructure. Emotiv Studio, powered by EmotivIQ™, supports enterprise and research partners with validated engagement metrics so you can turn brain data into insights you can act on.</p>
+        <a href="./studio" class="inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all">Unlock What Customers Really Want <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm card-hover">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0005.svg" alt="" class="w-6 h-6" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Academic Research</h3>
+        <p class="text-navy/60 text-sm leading-relaxed mb-6">Validate your hypothesis with the standard for mobile EEG. Grant-ready data fidelity with real-world validity.</p>
+        <a href="./academic-research-and-education" class="inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all">Access Research Hub <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm card-hover">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0011.svg" alt="" class="w-6 h-6" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Brain-powered Video Games</h3>
+        <p class="text-navy/60 text-sm leading-relaxed mb-6">Experience the magic of mind-controlled gaming.</p>
+        <a href="https://emotivplay.com" class="inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all">Play Now <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm card-hover">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0017.svg" alt="" class="w-6 h-6" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Personal Neuroscience</h3>
+        <p class="text-navy/60 text-sm leading-relaxed mb-6">Optimize your cognitive performance or experience the magic of mind-controlled gaming.</p>
+        <a href="./emotiv-app" class="inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all">Start Your Wellness Journey <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm card-hover">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0018.svg" alt="" class="w-6 h-6" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold text-navy mb-3">Developers & Engineers</h3>
+        <p class="text-navy/60 text-sm leading-relaxed mb-6">Build, train, and deploy neuro-adaptive apps using Cortex API, Gemini, and Google Cloud Platform.</p>
+        <a href="./developer" class="inline-flex items-center gap-1 text-primary text-sm font-semibold hover:gap-2 transition-all">Start Building <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-primary/5 border border-primary/10 rounded-2xl p-8 shadow-sm flex flex-col justify-center">
+        <p class="text-navy/50 text-sm mb-1">Trusted by</p>
+        <p class="text-3xl font-bold text-navy">Fortune 500</p>
+        <p class="text-navy/50 text-sm mt-1">companies & top agencies worldwide</p>
+        <a href="./about" class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 hover:gap-2 transition-all">Work with us <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The Operating System for the Brain -->
+<section class="py-20 md:py-28 bg-navy text-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">The Operating System for the Brain.</h2>
+      <p class="text-lg text-white/60 max-w-3xl mx-auto">We provide the complete stack to scale your application. From the most cited EEG systems to Gemini-powered context interpretation, all with streamlined deployment on Google Cloud Platform.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0010.svg" alt="" class="w-7 h-7" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold mb-3">Capture</h3>
+        <p class="text-white/60 text-sm leading-relaxed"><span class="font-semibold text-white">Emotiv</span> — Research-grade data from the most cited mobile EEG systems in the world.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0024.svg" alt="" class="w-7 h-7" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold mb-3">Interpret</h3>
+        <p class="text-white/60 text-sm leading-relaxed"><span class="font-semibold text-white">Gemini</span> — Context interpretation of brain data in real-time.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-5">
+          <img src="assets/images/img_0025.svg" alt="" class="w-7 h-7" loading="lazy">
+        </div>
+        <h3 class="text-xl font-bold mb-3">Scale</h3>
+        <p class="text-white/60 text-sm leading-relaxed"><span class="font-semibold text-white">Google Cloud Platform</span> — Serverless backend integration for streamlined deployment.</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto text-center">
+      <div class="flex items-center gap-2 justify-center bg-white/5 rounded-xl px-4 py-3">
+        <svg class="w-4 h-4 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        <span class="text-sm text-white/80">Secure: GDPR, CCPA, and SOC2 Compliant</span>
+      </div>
+      <div class="flex items-center gap-2 justify-center bg-white/5 rounded-xl px-4 py-3">
+        <svg class="w-4 h-4 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        <span class="text-sm text-white/80">Intelligent: Pre-trained models for Stress, Focus, and Cognitive Load</span>
+      </div>
+      <div class="flex items-center gap-2 justify-center bg-white/5 rounded-xl px-4 py-3">
+        <svg class="w-4 h-4 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+        <span class="text-sm text-white/80">Scalable: Serverless backend integration</span>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <p class="text-white/30 text-xs tracking-[0.3em] uppercase mb-6">Capture → Interpret → Scale</p>
+      <a href="./developer" class="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full px-8 py-3 transition-all shadow-lg shadow-primary/25">Start Building <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Developer Quote -->
+<section class="py-16 bg-light">
+  <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center">
+    <svg class="w-8 h-8 text-primary/20 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z"/></svg>
+    <blockquote class="text-xl md:text-2xl text-navy/80 font-medium leading-relaxed italic">
+      "I've always loved pushing the limits of technology to tell engaging stories. But making games that people control with their thoughts? Developing with Emotiv has been nothing short of magical."
+    </blockquote>
+    <p class="text-navy/60 mt-6 font-semibold">— Bryan Salt</p>
+    <p class="text-navy/40 text-sm">Creative Director, Game Developer</p>
+  </div>
+</section>
+
+<!-- See what's possible / Client Showcase -->
+<section class="py-20 md:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight mb-4">See what's possible when Neuroscience steps outside the lab</h2>
+      <p class="text-lg text-navy/60 max-w-2xl mx-auto">Real-world applications transforming how we understand the brain.</p>
+    </div>
+    <!-- Showcase Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-light rounded-2xl p-6 text-center card-hover">
+        <div class="w-full h-32 flex items-center justify-center mb-4">
+          <img src="assets/images/img_0040.png" alt="Hearts & Heal" class="max-h-full max-w-full object-contain" loading="lazy">
+        </div>
+        <h3 class="text-lg font-bold text-navy mb-2">User & Product Research</h3>
+        <p class="text-sm text-navy/60">Understand real user responses with objective brain data.</p>
+      </div>
+      <div class="bg-light rounded-2xl p-6 text-center card-hover">
+        <div class="w-full h-32 flex items-center justify-center mb-4">
+          <img src="assets/images/img_0041.png" alt="Academic Research" class="max-h-full max-w-full object-contain" loading="lazy">
+        </div>
+        <h3 class="text-lg font-bold text-navy mb-2">Academic Research</h3>
+        <p class="text-sm text-navy/60">Validate your hypothesis with grant-ready data fidelity.</p>
+        <a href="./academic-research-and-education" class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-3 hover:gap-2 transition-all">Learn More <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-light rounded-2xl p-6 text-center card-hover">
+        <div class="w-full h-32 flex items-center justify-center mb-4">
+          <img src="assets/images/img_0042.png" alt="Hearts & Heal" class="max-h-full max-w-full object-contain" loading="lazy">
+        </div>
+        <h3 class="text-lg font-bold text-navy mb-2">Hearts & Heal</h3>
+        <p class="text-sm text-navy/60">Award-winning wellness experience powered by brain-sensing technology.</p>
+        <a href="https://www.prdaily.com/awards/events/pr-daily-awards-luncheon-2025/#winner-experiential-event-21" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-3 hover:gap-2 transition-all">Watch Trailer <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="bg-light rounded-2xl p-6 text-center card-hover">
+        <div class="w-full h-32 flex items-center justify-center mb-4">
+          <img src="assets/images/img_0043.png" alt="Emotiv Play" class="max-h-full max-w-full object-contain" loading="lazy">
+        </div>
+        <h3 class="text-lg font-bold text-navy mb-2">Brain-Computer Interface</h3>
+        <p class="text-sm text-navy/60">Experience the magic of mind-controlled gaming with Emotiv Play.</p>
+        <a href="https://emotivplay.com" class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-3 hover:gap-2 transition-all">Play Now <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products / The Standard for Mobile EEG -->
+<section class="py-20 md:py-28 bg-navy text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">The Standard for Mobile EEG.</h2>
+      <p class="text-white/50 text-lg mt-4">The most validated platform for research, enterprise, and personal neuroscience.</p>
+    </div>
+    <!-- Product Slides -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+      <a href="./epoc-x" class="group bg-[#1e2230] rounded-2xl overflow-hidden product-slide">
+        <div class="aspect-square p-6 flex items-center justify-center relative">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#2d4054]/30 to-transparent"></div>
+          <span class="absolute top-3 left-3 bg-light text-primary text-xs font-bold px-3 py-1 rounded-full z-10">Best seller</span>
+          <img src="assets/images/img_0001.png" alt="Epoc X" class="w-full h-full object-contain relative z-10" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-white mb-1">Epoc X</h3>
+          <p class="text-sm text-white/60">14-Channel professional EEG. The most cited mobile headset in history.</p>
+          <span class="inline-block mt-4 text-sm font-semibold bg-white text-navy rounded-full px-6 py-2 group-hover:bg-primary group-hover:text-white transition-all">View Specs</span>
+        </div>
+      </a>
+      <a href="./mn8" class="group bg-[#1e2230] rounded-2xl overflow-hidden product-slide">
+        <div class="aspect-square p-6 flex items-center justify-center relative">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#2d4054]/30 to-transparent"></div>
+          <img src="assets/images/img_0002.png" alt="MN8" class="w-full h-full object-contain relative z-10" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-white mb-1">MN8</h3>
+          <p class="text-sm text-white/60">2-Channel earbuds. Research-grade data in a form factor users actually want to wear.</p>
+          <span class="inline-block mt-4 text-sm font-semibold bg-white text-navy rounded-full px-6 py-2 group-hover:bg-primary group-hover:text-white transition-all">View Specs</span>
+        </div>
+      </a>
+      <a href="./flex" class="group bg-[#1e2230] rounded-2xl overflow-hidden product-slide">
+        <div class="aspect-square p-6 flex items-center justify-center relative">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#2d4054]/30 to-transparent"></div>
+          <img src="assets/images/img_0003.png" alt="Flex 2.0" class="w-full h-full object-contain relative z-10" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-white mb-1">Flex 2.0</h3>
+          <p class="text-sm text-white/60">32-Channel flexibility. Maximum coverage for complex academic research.</p>
+          <span class="inline-block mt-4 text-sm font-semibold bg-white text-navy rounded-full px-6 py-2 group-hover:bg-primary group-hover:text-white transition-all">View Specs</span>
+        </div>
+      </a>
+      <a href="./insight" class="group bg-[#1e2230] rounded-2xl overflow-hidden product-slide">
+        <div class="aspect-square p-6 flex items-center justify-center relative">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#2d4054]/30 to-transparent"></div>
+          <img src="assets/images/img_0014.png" alt="Insight" class="w-full h-full object-contain relative z-10" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-white mb-1">Insight</h3>
+          <p class="text-sm text-white/60">5-channel EEG headband for sleek, efficient BCI development and research.</p>
+          <span class="inline-block mt-4 text-sm font-semibold bg-white text-navy rounded-full px-6 py-2 group-hover:bg-primary group-hover:text-white transition-all">View Specs</span>
+        </div>
+      </a>
+      <a href="./mw20" class="group bg-[#1e2230] rounded-2xl overflow-hidden product-slide">
+        <div class="aspect-square p-6 flex items-center justify-center relative">
+          <div class="absolute inset-0 bg-gradient-to-b from-[#2d4054]/30 to-transparent"></div>
+          <img src="assets/images/img_0015.png" alt="MW20" class="w-full h-full object-contain relative z-10" loading="lazy">
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-white mb-1">MW20</h3>
+          <p class="text-sm text-white/60">Wearable audio form factor extending BCI and brain-sensing possibilities into more everyday interaction contexts.</p>
+          <span class="inline-block mt-4 text-sm font-semibold bg-white text-navy rounded-full px-6 py-2 group-hover:bg-primary group-hover:text-white transition-all">View Specs</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- News / What's New -->
+<section class="py-20 md:py-28 bg-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <p class="text-sm font-semibold text-primary tracking-[0.2em] uppercase mb-4">Research</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-navy">What's New at Emotiv</h2>
+      </div>
+      <a href="./blogs/news" class="text-primary font-semibold hover:underline mt-4 md:mt-0">Read latest news <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <a href="https://www.mdpi.com/1424-8220/25/16/4946" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+        <div class="aspect-[16/9] bg-gradient-to-br from-navy to-primary/30 flex items-center justify-center p-6">
+          <img src="assets/images/img_0050.png" alt="Research paper" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-primary font-semibold tracking-wider uppercase mb-2">New Study</p>
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">EPOC Achieves 99% Accuracy for EEG Authentication</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">New research validates EPOC headset's reliability for brain-based biometric identification.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Read the Paper <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a href="./neurodiscovery-grants" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+        <div class="aspect-[16/9] bg-gradient-to-br from-[#1a1a2e] to-navy flex items-center justify-center p-6">
+          <img src="assets/images/img_0051.png" alt="Neurodiscovery Grants" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-primary font-semibold tracking-wider uppercase mb-2">Program</p>
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">Neurodiscovery Grants</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">Apply for funding to support innovative neuroscience research using Emotiv technology.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Learn More <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a href="./empowering-our-community" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all">
+        <div class="aspect-[16/9] bg-gradient-to-br from-primary/20 to-navy flex items-center justify-center p-6">
+          <img src="assets/images/img_0049.png" alt="Community" class="w-full h-full object-contain" loading="lazy">
+        </div>
+        <div class="p-6">
+          <p class="text-xs text-primary font-semibold tracking-wider uppercase mb-2">Community</p>
+          <h3 class="text-lg font-bold text-navy mb-2 group-hover:text-primary transition-colors">Empowering Our Community</h3>
+          <p class="text-sm text-navy/60 leading-relaxed">Discover how researchers and developers are pushing the boundaries of neuroscience.</p>
+          <span class="inline-flex items-center gap-1 text-primary text-sm font-semibold mt-4 group-hover:gap-2 transition-all">Read Case Study <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 bg-navy text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-tight">Measure and interpret the human brain anywhere, for anyone.</h2>
+    <p class="text-white/60 text-lg mb-10 max-w-2xl mx-auto">The most validated platform for research, enterprise, and personal neuroscience.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="https://shop.emotiv.com/" class="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full px-8 py-3.5 transition-all shadow-lg shadow-primary/25">Shop Now <span aria-hidden="true">→</span></a>
+      <a href="./contact" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium rounded-full px-8 py-3.5 border border-white/20 transition-all">Contact Sales</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy text-white/60 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8">
+    <!-- Footer grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4">Hardware</h3>
+        <ul class="space-y-2">
+          <li><a href="./epoc-x" class="text-sm hover:text-white transition-colors">Epoc X</a></li>
+          <li><a href="./mn8" class="text-sm hover:text-white transition-colors">MN8</a></li>
+          <li><a href="./flex" class="text-sm hover:text-white transition-colors">Flex 2.0</a></li>
+          <li><a href="./flex?product-variant=gel" class="text-sm hover:text-white transition-colors">Flex 2 Gel</a></li>
+          <li><a href="./flex?product-variant=saline" class="text-sm hover:text-white transition-colors">Flex 2 Saline</a></li>
+          <li><a href="./insight" class="text-sm hover:text-white transition-colors">Insight</a></li>
+          <li><a href="./mw20" class="text-sm hover:text-white transition-colors">MW20</a></li>
+          <li><a href="./x-trodes" class="text-sm hover:text-white transition-colors">X-Trodes</a></li>
+          <li><a href="./accessories" class="text-sm hover:text-white transition-colors">Accessories</a></li>
+          <li><a href="./comparison" class="text-sm hover:text-white transition-colors">Compare Hardware</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4">Software</h3>
+        <ul class="space-y-2">
+          <li><a href="./emotivpro" class="text-sm hover:text-white transition-colors">EmotivPRO</a></li>
+          <li><a href="./emotiv-app" class="text-sm hover:text-white transition-colors">Emotiv App</a></li>
+          <li><a href="./studio" class="text-sm hover:text-white transition-colors">Emotiv Studio</a></li>
+          <li><a href="./emotiv-bci" class="text-sm hover:text-white transition-colors">EmotivBCI</a></li>
+          <li><a href="./emotiv-brainviz" class="text-sm hover:text-white transition-colors">BrainViz</a></li>
+          <li><a href="./emotiv-launcher" class="text-sm hover:text-white transition-colors">Launcher</a></li>
+          <li><a href="./emotiv-eeg-cloud" class="text-sm hover:text-white transition-colors">EEG Cloud</a></li>
+          <li><a href="https://brainwear.app/" class="text-sm hover:text-white transition-colors">Brainwear App</a></li>
+          <li><a href="https://emotivplay.com/" class="text-sm hover:text-white transition-colors">Emotiv Play</a></li>
+          <li><a href="./cortex-sdk-application-form" class="text-sm hover:text-white transition-colors">Cortex SDK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4">Solutions</h3>
+        <ul class="space-y-2">
+          <li><a href="./academic-research-and-education" class="text-sm hover:text-white transition-colors">Academic Research</a></li>
+          <li><a href="./neuromarketing" class="text-sm hover:text-white transition-colors">Neuromarketing</a></li>
+          <li><a href="./brain-computer-interface" class="text-sm hover:text-white transition-colors">Brain-Computer Interface (BCI)</a></li>
+          <li><a href="./brain-computer-interface" class="text-sm hover:text-white transition-colors">Brain Health</a></li>
+          <li><a href="./developer" class="text-sm hover:text-white transition-colors">Developers & Engineers</a></li>
+          <li><a href="./emotiv-bci" class="text-sm hover:text-white transition-colors">EmotivBCI</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4">Support</h3>
+        <ul class="space-y-2">
+          <li><a href="./setup" class="text-sm hover:text-white transition-colors">Quick Start Guide</a></li>
+          <li><a href="./knowledge-base" class="text-sm hover:text-white transition-colors">Knowledge Base</a></li>
+          <li><a href="./blogs/tutorials" class="text-sm hover:text-white transition-colors">Tutorials</a></li>
+          <li><a href="./blogs/glossary" class="text-sm hover:text-white transition-colors">Glossary</a></li>
+          <li><a href="https://forum.emotiv.com/" class="text-sm hover:text-white transition-colors">Community Forum</a></li>
+          <li><a href="./blogs/how-to" class="text-sm hover:text-white transition-colors">How To</a></li>
+          <li><a href="./contact" class="text-sm hover:text-white transition-colors">Contact Support</a></li>
+          <li><a href="./feature-request" class="text-sm hover:text-white transition-colors">Feature Request</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="./about" class="text-sm hover:text-white transition-colors">About Us</a></li>
+          <li><a href="./contact" class="text-sm hover:text-white transition-colors">Contact</a></li>
+          <li><a href="./blogs/news" class="text-sm hover:text-white transition-colors">News</a></li>
+          <li><a href="./empowering-our-community" class="text-sm hover:text-white transition-colors">Community</a></li>
+          <li><a href="./social-impact" class="text-sm hover:text-white transition-colors">Social Impact</a></li>
+          <li><a href="./neurodiscovery-grants" class="text-sm hover:text-white transition-colors">Neurodiscovery Grants</a></li>
+          <li><a href="https://account.emotiv.com/my-account/organization-licensing/" class="text-sm hover:text-white transition-colors">Organization Licensing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Legal & More</h4>
+        <ul class="space-y-2">
+          <li><a href="./shipping" class="text-sm hover:text-white transition-colors">Shipping Policy</a></li>
+          <li><a href="./refund-policy" class="text-sm hover:text-white transition-colors">Refund Policy</a></li>
+          <li><a href="./subscription-terms" class="text-sm hover:text-white transition-colors">Subscription Terms</a></li>
+          <li><a href="./patents" class="text-sm hover:text-white transition-colors">Patents</a></li>
+          <li><a href="https://id.emotivcloud.com/eoidc/privacy/privacy_policy/" class="text-sm hover:text-white transition-colors">Privacy Policy</a></li>
+          <li><a href="https://id.emotivcloud.com/eoidc/privacy/terms/" class="text-sm hover:text-white transition-colors">Terms of use</a></li>
+          <li><a href="https://cerebrum.emotivcloud.com/api/privacy/doc/eula/" class="text-sm hover:text-white transition-colors">EULA</a></li>
+          <li><a href="./cloud-security" class="text-sm hover:text-white transition-colors">Cloud Security</a></li>
+        </ul>
+        <!-- Social -->
+        <div class="flex gap-2 mt-6">
+          <a href="https://x.com/emotiv" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="w-8 h-8 bg-white/10 hover:bg-primary/80 rounded-full flex items-center justify-center transition-colors">
+            <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/emotiv/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-8 h-8 bg-white/10 hover:bg-primary/80 rounded-full flex items-center justify-center transition-colors">
+            <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/emotiv/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-8 h-8 bg-white/10 hover:bg-primary/80 rounded-full flex items-center justify-center transition-colors">
+            <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/channel/UCwyjoZxAFyvnO630ebqAx2Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-8 h-8 bg-white/10 hover:bg-primary/80 rounded-full flex items-center justify-center transition-colors">
+            <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/emotiv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-8 h-8 bg-white/10 hover:bg-primary/80 rounded-full flex items-center justify-center transition-colors">
+            <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+        <div class="mt-4">
+          <a href="https://discord.com/invite/jnZNYZ9dcd" target="_blank" rel="noopener noreferrer" class="text-xs hover:text-white transition-colors flex items-center gap-1">Join Discord <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Emotiv" target="_blank" rel="noopener noreferrer" class="text-xs hover:text-white transition-colors flex items-center gap-1 mt-1">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://forum.emotiv.com/" target="_blank" rel="noopener noreferrer" class="text-xs hover:text-white transition-colors flex items-center gap-1 mt-1">Forum <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div class="border-t border-white/10 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2">
+          <svg width="55" height="17" viewBox="0 0 82 26" fill="rgba(255,255,255,0.3)"><path d="M35.122 0L40.252 3.546L29.269 10.693C29.826 11.123 30.461 11.485 31.018 11.91L42.07 4.803L46.877 8.072L35.953 15.328C36.442 15.823 37.16 16.096 37.761 16.491L48.959 9.291V1.426H57.152V17.101H64.416V24.514H49.007V17.087L35.24 26L21.145 16.422C19.767 20.845 16.504 24.168 11.09 24.564C7.67 24.811 3.884 24.381 0 24.564V1.471C4.856 1.798 10.191 0.813 14.041 2.026C17.447 3.096 19.904 5.848 20.979 9.281L35.127 0.089ZM7.763 8.805V17.111C9.717 17.121 11.198 17.235 12.356 16.334C14.066 14.996 14.417 11.678 12.903 9.911C11.891 8.732 10.186 8.484 7.822 8.638C7.757 8.647 7.763 8.727 7.773 8.806H7.763ZM66.596 1.337H74.789V17.066H82V24.43H66.537V1.501C66.533 1.421 66.527 1.342 66.585 1.332Z"/></svg>
+        </div>
+        <p class="text-xs text-white/40 text-center md:text-right">
+          &copy; 2026 Emotiv. All Rights Reserved
+        </p>
+      </div>
+      <p class="text-xs text-white/30 mt-4 leading-relaxed">
+        <strong class="text-white/50">Disclaimer</strong> — Emotiv products are intended to be used for research applications and personal use only. Our products are not sold as Medical Devices as defined in EU directive 93/42/EEC. Our products are not designed or intended to be used for diagnosis or treatment of disease.
+      </p>
+      <p class="text-xs text-white/25 mt-3 leading-relaxed">
+        <strong class="text-white/40">Note on Translations:</strong> Non-English versions of this website have been translated for your convenience using artificial intelligence. While we strive for accuracy, automated translations may contain errors or nuances that differ from the original text. For the most accurate information, please refer to the English version of this site.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
